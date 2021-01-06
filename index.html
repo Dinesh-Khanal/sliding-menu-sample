@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Barber</title>
+</head>
+<body>
+    <section id="navigation">
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <div class="banner-text">
+            <h1>Hair Studio</h1>
+            <p>Style Your Hair Is Style Your Life</p>
+            <a href="#" class="banner-btn"><span></span>Find out</a>
+            <a href="#" class="banner-btn"><span></span>Read more</a>
+        </div>
+    </section>
+    <nav class="side-nav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">TESTIMONIALS</a></li>
+            <li><a href="#">MEET US</a></li>
+        </ul>
+    </nav>
+    <div class="menu-btn">&#9776;</div>
+    <script>
+        let menubtn = document.querySelector('.menu-btn');
+        let sidenav = document.querySelector('.side-nav');
+        sidenav.style.right = '-13em';
+        menubtn.addEventListener('click', function(){
+            if(sidenav.style.right == '-13em'){
+                sidenav.style.right = '0';
+                menubtn.innerHTML = 'X';
+            }else{
+                sidenav.style.right = '-13em';
+                menubtn.innerHTML = '&#9776;';
+            }
+        })
+
+        //window.onload = meFunction;
+        //menubtn.addEventListener('click', meFunction);
+        // meFunction function(){
+
+        //}
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300&display=swap');
+*{
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+/* Navigation */
+#navigation{
+    background-image: linear-gradient(rgba(0,0,0,0.4), #009688), url('../images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.logo{
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+}
+.banner-text{
+    padding-top: 40vh;
+    text-align: center;
+    color: #fff;
+}
+.banner-text h1{
+    font-size: 12vmin;
+    font-family: 'Kaushan Script', cursive;
+}
+.banner-text p{
+    font-style:italic;
+}
+.banner-btn{
+    padding: .5rem 1.5rem;
+    display: inline-block;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+    margin: 1rem;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+.banner-btn span{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 0%;
+    background-color: white;
+    height: 100%;
+    z-index: -1;
+    transition: 0.5s;
+}
+.banner-btn:hover span{
+    width: 100%;
+}
+.banner-btn:hover{
+    color:black;
+}
+
+/* Side navigation bar */
+.side-nav{
+    position: fixed;
+    top: 0;
+    right:-13em;
+    background-color: #51613e;
+    width:13em;
+    transition: 1s;
+}
+.side-nav ul{
+    list-style:none;
+    margin-top: 2.5em;
+}
+.side-nav ul li{
+    text-align: center;
+    border-bottom: 1px solid #777;
+}
+.side-nav ul li:first-child{
+    border-top: 1px solid #777;
+}
+.side-nav ul li:last-child{
+    border-bottom: none;
+}
+.side-nav ul a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: .6em 1.5em;
+
+}
+.side-nav ul a:hover{
+    color: #ccc;
+}
+.menu-btn{
+    position: fixed;
+    top: 3px;
+    right:5px;
+    color: white;
+    padding: 2px 2px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: #777;
+    text-align: center;
+    z-index: 5;
+}
+
