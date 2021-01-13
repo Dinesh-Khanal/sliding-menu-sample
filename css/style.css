@@ -5,9 +5,13 @@
     box-sizing:border-box;
     font-family:'Poppins', sans-serif;
 }
+:root{
+    --light-text: #00877c;
+    --bg-color: #009688;
+}
 /* Navigation */
 #navigation{
-    background-image: linear-gradient(rgba(0,0,0,0.4), #009688), url('../images/banner.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.4), var(--bg-color)), url('../images/banner.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -104,4 +108,88 @@
     text-align: center;
     z-index: 5;
 }
-
+/* Features */
+.title-text{
+    margin: 50px 0;
+    text-align: center;
+}
+.title-text p{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(0,0,0,0.6);
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+}
+.title-text p::after{
+    content:"";
+    background-image: linear-gradient( #166, #fff);
+    width: 2.5em;
+    height: 100%;
+    position: absolute;
+    left:0;
+    top: -0.5rem;
+    transform: rotate(-10deg);
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    z-index: -1;
+}
+.title-text h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.feature-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+    align-items: center;
+}
+.feature{
+    flex-basis: 50%;
+}
+.feature h1{
+    color: var(--light-text);
+}
+.feature-img{
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+}
+.feature-img img{
+    width: 60%;
+    border-radius: 1rem;
+}
+.features-desc{
+    display: flex;
+    align-items: center;
+    margin: 0.8rem 0;
+}
+.feature-icon .fa{
+ font-size: 35px;
+ color:#00877c;
+ border: 2px solid #00877c;
+ text-align:center;
+ border-radius: 8px;
+ width: 50px;
+ height: 50px;
+ line-height: 50px;
+}
+.feature-text{
+    margin: 0 1rem;
+}
+@media screen and (max-width: 768px){
+    .title-text h1{
+        font-size: 35px;
+    }
+    .feature{
+        flex-basis: 100%;
+    }
+    .feature-img{
+        flex-basis: 100%;
+    }
+    .feature-img img{
+        width: 100%;
+    }
+}
