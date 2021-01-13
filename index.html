@@ -20,10 +20,10 @@
     <nav class="side-nav">
         <ul>
             <li><a href="#">HOME</a></li>
-            <li><a href="#">FEATURES</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">TESTIMONIALS</a></li>
-            <li><a href="#">MEET US</a></li>
+            <li><a href="#features">FEATURES</a></li>
+            <li><a href="#service">SERVICES</a></li>
+            <li><a href="#testimonial">TESTIMONIALS</a></li>
+            <li><a href="#footer">MEET US</a></li>
         </ul>
     </nav>
     <div class="menu-btn">&#9776;</div>
@@ -54,7 +54,120 @@
             <div class="feature-img"><img src="./images/barber-man.jpg" alt=""></div>
         </div>
     </section>
-    <script>
+    <!-- Service section -->
+    <section id="service">
+        <div class="title-text">
+            <p>SERVICES</p>
+            <h1>We Provide Better</h1>
+        </div>
+        <div class="service-box">
+            <div class="single-service">
+                <img src="./images/pic-1.jpg" alt="service pic">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Hair Styling</h3>
+                    <hr>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro tenetur, ipsa at corporis atque odio.</p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="./images/pic-2.jpg" alt="service pic">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Hair Styling</h3>
+                    <hr>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro tenetur, ipsa at corporis atque odio.</p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="./images/pic-3.jpg" alt="service pic">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Beard Trim</h3>
+                    <hr>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro tenetur, ipsa at corporis atque odio.</p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="./images/pic-4.jpg" alt="service pic">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Dry Sampoo</h3>
+                    <hr>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro tenetur, ipsa at corporis atque odio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonial">
+        <div class="title-text">
+            <p>TESTIMONIAL</p>
+            <h1>What Client Says</h1>
+        </div>
+        <div class="testimonial-box">
+            <div class="testimonial-col">
+                <div class="testimon-head">
+                    <img src="./images/img-1.jpg" alt="">
+                    <div class="t-name">
+                        <p>KEN NORMAN <i class="fa fa-twitter"></i></p>
+                        <small>@kennorman</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti autem commodi ab cum sed! Repellat fuga laboriosam dolor tempora quia quos debitis consequatur iste delectus!</p>
+            </div>
+            <div class="testimonial-col">
+                <div class="testimon-head">
+                    <img src="./images/img-2.jpg" alt="">
+                    <div class="t-name">
+                        <p>Liara Karian <i class="fa fa-twitter"></i></p>
+                        <small>@liarakarian</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti autem commodi ab cum sed! Repellat fuga laboriosam dolor tempora quia quos debitis consequatur iste delectus!</p>
+            </div>
+            <div class="testimonial-col">
+                <div class="testimon-head">
+                    <img src="./images/img-3.jpg" alt="">
+                    <div class="t-name">
+                        <p>Ricky Danial <i class="fa fa-twitter"></i></p>
+                        <small>@rickydanial</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti autem commodi ab cum sed! Repellat fuga laboriosam dolor tempora quia quos debitis consequatur iste delectus!</p>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <section id="footer">
+        <div class="title-text">
+            <p>CONTACT</p>
+            <h1>Visit Shop Today</h1>
+        </div>
+        <div class="footer-box">
+            <div class="footer-left">
+                <h1>Opening Hours</h1>
+                <p><i class="fa fa-clock-o"></i> Monday to Friday - 9am to 9pm</p>
+                <p><i class="fa fa-clock-o"></i> Saturday and Sunday - 8am to 11pm</p>
+            </div>
+            <div class="footer-right">
+                <h1>Get In Touch</h1>
+                <p>#30 abc Colony, Kathmandu Nepal <i class="fa fa-map-marker"></i></p>
+                <p>dineshkhanal@email.com <i class="fa fa-paper-plane"></i></p>
+                <p>+9771433771 <i class="fa fa-phone"></i></p>
+            </div>
+        </div>
+        <div class="social">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-youtube-play"></i>
+        </div>
+        <div class="copyright">
+            <p>&copy; Copyright 2020 Redpanda IT Solutions, Kathmandu</p>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js" integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ==" crossorigin="anonymous"></script>
+   <script>
         let menubtn = document.querySelector('.menu-btn');
         let sidenav = document.querySelector('.side-nav');
         sidenav.style.right = '-13em';
@@ -66,9 +179,21 @@
                 sidenav.style.right = '-13em';
                 menubtn.innerHTML = '&#9776;';
             }
-        })
-
-        //window.onload = meFunction;
+        });
+       
+        var testimon = document.querySelectorAll('.testimonial-col');
+            for(let i = 0; i < testimon.length; i++){
+            testimon[i].addEventListener('click',function(){
+                var mytext = this.querySelector(".t-name p");
+                //location.href = "#";
+                alert(mytext.innerText);
+            })
+            }     
+        // Initialize Smooth Scroll and adjust the speed (its in mili second)    
+        var scroll = new SmoothScroll('a[href*="#"]', {
+	    speed: 1000
+        });
+        //window.onload = testme();
         //menubtn.addEventListener('click', meFunction);
         // meFunction function(){
 
